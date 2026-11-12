@@ -8,9 +8,9 @@ INTEGRANTES:
 Giovanni Soares de Souza
 
 LINKS:
-Site (GitHub Pages): preencher apos publicar
-Repositorio (GitHub): preencher
-Video (YouTube): preencher
+Site (GitHub Pages): https://giovannisouza.github.io/giovannisouza.loja-natal-magiadonatal.github.io/
+Repositorio (GitHub): https://github.com/giovannisouza-debug/loja-natal-magiadonatal
+Video (YouTube): https://youtu.be/hwjJWBuYqT8
 
 RECURSOS DE JAVASCRIPT IMPLEMENTADOS:
 1. Slideshow com botoes anterior/proximo e indicadores - index.html
