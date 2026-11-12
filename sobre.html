@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magia do Natal | Sobre Nós</title>
+    <link rel="icon" href="IMG/logo.jpg">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/css-responsivo.css">
+</head>
+<body>
+    <header>
+        <img src="IMG/logo.jpg" alt="Logo Magia do Natal">
+        <button class="btn-menu" aria-label="Abrir Menu" aria-expanded="false">Menu</button>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        <div class="header-acoes">
+            <button class="carrinho" id="btn-carrinho" title="Ver Carrinho">
+                <span class="info-carrinho"><strong id="qtd-carrinho">0</strong> (<strong id="total-carrinho">R$ 0,00</strong>)</span>
+            </button>
+            <button id="btn-musica">Tocar música de Natal</button>
+        </div>
+    </header>
+
+    <div id="modal-carrinho" class="modal-carrinho">
+        <div class="conteudo-modal">
+            <div class="cabecalho-modal">
+                <h2>Seu Carrinho</h2>
+                <button id="btn-fechar-carrinho">X</button>
+            </div>
+            <div id="itens-carrinho-painel" class="lista-itens-painel"></div>
+            <section class="extrato-pedido" aria-label="Extrato do pedido">
+                <div class="cabecalho-extrato">
+                    <strong>MAGIA DO NATAL</strong>
+                    <span>EXTRATO DO PEDIDO</span>
+                </div>
+                <div id="linhas-extrato-pedido"></div>
+                <div class="total-extrato">
+                    <span>TOTAL</span>
+                    <strong id="total-extrato-pedido">R$ 0,00</strong>
+                </div>
+            </section>
+            <button id="btn-esvaziar-carrinho" class="btn-esvaziar">Limpar o Carrinho</button>
+        </div>
+    </div>
+
+    <main>
+        <section class="pagina-sobre">
+            <h1>Sobre a Magia do Natal</h1>
+            <p class="subtitulo-sobre">Conheça a nossa história e a equipe dedicada a trazer o sabor do Natal até você!</p>
+
+            <div class="historia">
+                <div class="texto-historia">
+                    <h2>Nossa História</h2>
+                    <p>Fundada com a missão de levar o espírito natalino a cada lar através de receitas tradicionais e artesanais, o nosso compromisso é selecionar os melhores ingredientes para criar memórias inesquecíveis em torno da mesa de Natal.</p>
+                </div>
+            </div>
+
+            <div class="proposito-loja">
+                <article>
+                    <h2>Missão</h2>
+                    <p>Preparar delícias natalinas artesanais que aproximem as pessoas e façam parte de boas lembranças.</p>
+                </article>
+                <article>
+                    <h2>Visão</h2>
+                    <p>Ser lembrada pelo cuidado, pela qualidade e pelo sabor das celebrações de Natal.</p>
+                </article>
+                <article>
+                    <h2>Valores</h2>
+                    <p>Tradição, carinho no preparo, ingredientes de qualidade e respeito a cada cliente.</p>
+                </article>
+            </div>
+
+            <div class="caixa-contagem">
+                <h2>Contagem Regressiva para o Natal!</h2>
+                <div id="contagem" class="contador-mecanico">
+                    <div class="bloco-tempo">
+                        <div class="display-numero"><span id="dias">00</span></div>
+                        <span class="rotulo">Dias</span>
+                    </div>
+                    <div class="separador">:</div>
+                    <div class="bloco-tempo">
+                        <div class="display-numero"><span id="horas">00</span></div>
+                        <span class="rotulo">Horas</span>
+                    </div>
+                    <div class="separador">:</div>
+                    <div class="bloco-tempo">
+                        <div class="display-numero"><span id="minutos">00</span></div>
+                        <span class="rotulo">Minutos</span>
+                    </div>
+                    <div class="separador">:</div>
+                    <div class="bloco-tempo">
+                        <div class="display-numero"><span id="segundos">00</span></div>
+                        <span class="rotulo">Segundos</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secao-equipe">
+                <h2>Equipe de Desenvolvimento</h2>
+                <div class="grid-equipe">
+                    <div class="membro">
+                        <div class="avatar-equipe" role="img" aria-label="Iniciais de Giovanni Soares de Souza">GS</div>
+                        <h3>Giovanni Soares de Souza</h3>
+                        <p class="funcao">Desenvolvimento do JS, Gravação e Edição do Vídeo, Design, Interface e Produtos</p>
+                        <p>Responsável pelo desenvolvimento da estrutura do HTML e estilos do CSS. Responsável pelos produtos e conteúdos do projeto. Responsável pela lógica JavaScript, animações, interatividade, gravação do vídeo e edição do vídeo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026, Magia do Natal, Imagens dos produtos: Mercado Livre, Magazine Luiza, e outras lojas.</p>
+    </footer>
+
+    <button id="topo">^ Topo</button>
+    <script src="JS/produtos.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>

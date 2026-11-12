@@ -1,0 +1,38 @@
+PROJETO AV2 - LOJA NATALINA - Prof: Samuel Elias
+
+LOJA: Magia do Natal
+TIPO DO SITE: Confeitaria
+TURMA: 1-TIE
+
+INTEGRANTES:
+Giovanni Soares de Souza
+
+LINKS:
+Site (GitHub Pages): preencher apos publicar
+Repositorio (GitHub): preencher
+Video (YouTube): preencher
+
+RECURSOS DE JAVASCRIPT IMPLEMENTADOS:
+1. Slideshow com botoes anterior/proximo e indicadores - index.html
+2. Parallax - index.html
+3. Musica de fundo e efeitos sonoros - todas as paginas
+4. Cards dinamicos com 50 produtos - Home e produtos.html
+5. Filtro por categoria e busca - produtos.html
+6. Carrinho com quantidade, total e localStorage - todas as paginas
+7. Modal de detalhes dos produtos - Home e produtos.html
+8. Contagem regressiva para o Natal - sobre.html
+9. Validacao do formulario - contato.html
+10. Menu responsivo - todas as paginas
+11. Galeria com lightbox - galeria.html
+12. Efeito de neve - index.html
+13. Animacao ao rolar - Home e Sobre nos
+14. Botao voltar ao topo - todas as paginas
+no caso eu decidir colocar todos os recursos do JS
+
+CREDITOS:
+- Imagens dos produtos: Mercado Livre, Magazine Luiza, e outras lojas.
+- Sons: Musica de fundo do jogo War Robots do evento de natal, ho ho ho e o whoosh peguei de um site de efeitos sonoros
+
+OBSERVACOES:
+- O formulario valida os dados no navegador mas o projeto nao tem servidor para enviar mensagens.
+- O carrinho e uma demonstracao local e nao processa pagamentos.

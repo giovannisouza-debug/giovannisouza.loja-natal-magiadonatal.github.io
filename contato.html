@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magia do Natal | Contato</title>
+    <link rel="icon" href="IMG/logo.jpg">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/css-responsivo.css">
+</head>
+<body>
+    <header>
+        <img src="IMG/logo.jpg" alt="Logo Magia do Natal">
+        <button class="btn-menu" aria-label="Abrir Menu" aria-expanded="false">Menu</button>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        <div class="header-acoes">
+            <button class="carrinho" id="btn-carrinho" title="Ver Carrinho">
+                <span class="info-carrinho"><strong id="qtd-carrinho">0</strong> (<strong id="total-carrinho">R$ 0,00</strong>)</span>
+            </button>
+            <button id="btn-musica">Tocar música de Natal</button>
+        </div>
+    </header>
+
+    <div id="modal-carrinho" class="modal-carrinho">
+        <div class="conteudo-modal">
+            <div class="cabecalho-modal">
+                <h2>Seu Carrinho</h2>
+                <button id="btn-fechar-carrinho">X</button>
+            </div>
+            <div id="itens-carrinho-painel" class="lista-itens-painel"></div>
+            <section class="extrato-pedido" aria-label="Extrato do pedido">
+                <div class="cabecalho-extrato">
+                    <strong>MAGIA DO NATAL</strong>
+                    <span>EXTRATO DO PEDIDO</span>
+                </div>
+                <div id="linhas-extrato-pedido"></div>
+                <div class="total-extrato">
+                    <span>TOTAL</span>
+                    <strong id="total-extrato-pedido">R$ 0,00</strong>
+                </div>
+            </section>
+            <button id="btn-esvaziar-carrinho" class="btn-esvaziar">Limpar o Carrinho</button>
+        </div>
+    </div>
+
+    <main>
+        <h1>Fale Conosco</h1>
+        <p class="subtitulo-contato">Tem alguma dúvida ou deseja fazer um pedido especial? Envie-nos uma mensagem!</p>
+
+        <div class="grid-contato">
+            <div class="info-contato">
+                <h2>Entre em Contato</h2>
+                <p>Estamos prontos para atendê-lo e levar a Magia do Natal até sua casa.</p>
+                <ul class="lista-info">
+                    <li>
+                        <div>
+                            <strong>Endereço:</strong>
+                            <p>Rua Natalina, 1225 - Minas Gerais</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <strong>Telefone / WhatsApp:</strong>
+                            <p>(11) 25012-2026</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <strong>E-mail:</strong>
+                            <p>magia.donatal@hotmail.com</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <strong>Horário de Atendimento:</strong>
+                            <p>Seg - Sáb: 08h às 20h</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <strong>Instagram:</strong>
+                            <p>@magia.donatal</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="formulario">
+                <form id="form-contato">
+                    <div class="campo">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+                    </div>
+                    <div class="campo">
+                        <label for="assunto">Assunto</label>
+                        <input type="text" id="assunto" placeholder="Ex: Dúvida sobre Produtos..." required>
+                    </div>
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                </form>
+                <p id="mensagem-form" class="mensagem-sucesso" role="status" aria-live="polite"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026, Magia do Natal, Imagens dos produtos: Mercado Livre, Magazine Luiza, e outras lojas.</p>
+    </footer>
+
+    <button id="topo">^ Topo</button>
+    <script src="JS/produtos.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>

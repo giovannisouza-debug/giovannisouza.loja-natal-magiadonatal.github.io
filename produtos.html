@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magia do Natal | Produtos</title>
+    <link rel="icon" href="IMG/logo.jpg">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/css-responsivo.css">
+</head>
+<body>
+    <header>
+        <img src="IMG/logo.jpg" alt="Logo Magia do Natal">
+            <button class="btn-menu" aria-label="Abrir Menu" aria-expanded="false">Menu</button>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        <div class="header-acoes">
+            <button class="carrinho" id="btn-carrinho" title="Ver Carrinho">
+                <span class="info-carrinho"><strong id="qtd-carrinho">0</strong> (<strong id="total-carrinho">R$ 0,00</strong>)</span>
+            </button>
+            <button id="btn-musica">Tocar música de Natal</button>
+        </div>
+    </header>
+
+    <div id="modal-carrinho" class="modal-carrinho">
+        <div class="conteudo-modal">
+            <div class="cabecalho-modal">
+                <h2>Seu Carrinho</h2>
+                <button id="btn-fechar-carrinho">X</button>
+            </div>
+            <div id="itens-carrinho-painel" class="lista-itens-painel"></div>
+            <section class="extrato-pedido" aria-label="Extrato do pedido">
+                <div class="cabecalho-extrato">
+                    <strong>MAGIA DO NATAL</strong>
+                    <span>EXTRATO DO PEDIDO</span>
+                </div>
+                <div id="linhas-extrato-pedido"></div>
+                <div class="total-extrato">
+                    <span>TOTAL</span>
+                    <strong id="total-extrato-pedido">R$ 0,00</strong>
+                </div>
+            </section>
+            <button id="btn-esvaziar-carrinho" class="btn-esvaziar">Limpar o Carrinho</button>
+        </div>
+    </div>
+
+    <main>
+        <h1>Catálogo de Natal</h1>
+
+        <div class="painel-filtros">
+            <div class="campo-busca">
+                <input type="text" id="busca" placeholder="Buscar panetone, biscoitos, bebidas...">
+            </div>
+            <div class="seletor-categoria">
+                <select id="categoria">
+                    <option value="Todas">Todas as categorias</option>
+                    <option value="Panetones">Panetones</option>
+                    <option value="Biscoitos">Biscoitos</option>
+                    <option value="Chocolates">Chocolates</option>
+                    <option value="Cestas">Cestas</option>
+                    <option value="Bebidas">Bebidas</option>
+                    <option value="Conservas">Conservas</option>
+                    <option value="Frutas secas">Frutas secas e castanhas</option>
+                    <option value="Azeites">Azeites</option>
+                    <option value="Doces">Doces</option>
+                    <option value="Geleias">Geleias</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="barra-status-catalogo">
+            <p id="contador" class="badge-contador">Carregando produtos...</p>
+        </div>
+        
+        <section id="lista-produtos" class="grade-produtos"></section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026, Magia do Natal, Imagens dos produtos: Mercado Livre, Magazine Luiza, e outras lojas.</p>
+    </footer>
+
+    <button id="topo">^ Topo</button>
+    <script src="JS/produtos.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>
