@@ -1,0 +1,146 @@
+.btn-menu {
+  display: block;
+  font-size: 0.9rem;
+  background: none;
+  border: none;
+  color: var(--neve);
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--vermelho);
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.menu.aberto {
+  display: flex;
+}
+
+.menu a {
+  padding: 0.8rem 0;
+  margin: 0;
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .grade-produtos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .btn-menu {
+    display: none;
+  }
+  .menu {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+  }
+  .menu a {
+    display: inline-block;
+    padding: 0;
+    margin: 0 10px;
+  }
+  .grade-produtos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .grid-contato {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: start;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    padding: 0.7rem 1rem;
+  }
+  header img {
+    height: 48px;
+  }
+  .header-acoes {
+    flex: 1 0 100%;
+    justify-content: space-between;
+  }
+  main {
+    padding: 1.5rem 1rem;
+  }
+  .banner-home {
+    min-height: 300px;
+    padding: 2rem 1.5rem;
+  }
+  .banner-home h1 {
+    font-size: 2rem;
+  }
+  .banner-home p {
+    font-size: 1rem;
+  }
+  .proposito-loja {
+    grid-template-columns: 1fr;
+  }
+  .conteudo-detalhes {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .conteudo-detalhes > img {
+    height: 220px;
+  }
+  .acoes-card {
+    flex-direction: column;
+  }
+  .carrossel {
+    min-height: 250px;
+  }
+  .slide.ativo {
+    grid-template-columns: 1fr;
+  }
+  .slide img {
+    height: 210px;
+    min-height: 210px;
+  }
+  .conteudo-slide {
+    gap: 0.5rem;
+    padding: 1rem 1.25rem 2.5rem;
+  }
+  .conteudo-slide h2 {
+    font-size: 1.35rem;
+  }
+  .header-acoes {
+    gap: 0.5rem;
+  }
+  .resumo-carrinho {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .painel-filtros {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .campo-busca, 
+  .seletor-categoria {
+    width: 100%;
+    min-width: 100%;
+  }
+}
